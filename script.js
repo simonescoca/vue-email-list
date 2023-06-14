@@ -22,9 +22,7 @@ createApp ({
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then(
                 (element) => {
                     const email = element.data.response
-                    if (!this.emailList.includes(email)){
-                        this.emailList.push(email)
-                    }
+                    this.emailList.push(email)
                 }
             )
         }
